@@ -1,16 +1,11 @@
 import { h3 } from "../package/cPackage.js"
+import arr from "../../misc/data/data.json" assert { type:"json" }
 
 export default function array() {
-    const myRequest = new Request('../src/misc/data/data.json');
-      
-    fetch(myRequest)
-      .then(response => response.json())
-      .then(data => {
-        for (const data1 of data.data) {
+  let text1 = arr.shift().txt;
+  let text2 = arr.shift().txt2;
+  let concat =  text1.concat("<br>"+text2)
+  h3.innerHTML= arr.shift().title +"<br>"+ concat
 
-          h3.innerHTML= data1.output+"<br>"+data1.name2+" ";
-          
-        }
-      }).catch(console.error);
-  }
+}
   

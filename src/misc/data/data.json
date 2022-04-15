@@ -1,4 +1,7 @@
-{ "data" : [
-    {"output":"Array output:",
-    "name2":"assd"}
-]}
+[
+    
+    { "txt":"HELLO!" },
+    { "txt2":"WORLD" },
+    { "title":"Concat Result:" }
+    
+]
